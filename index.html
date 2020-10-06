@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Globe travel calculator</title>
 </head>
 <body>
+    <header>
+        <h1>Globe Traveler</h1>
+        <p>How long would it take to travel the length of the Equator using the following methods of transportation? </p>
+    </header>
+
+<section class="calculate">
+    <div class="infobox">
+        <img src="custom-calculator/images/rotating Earth.gif" alt="earth">
+        <div id="answer">It would take:</div>
+    </div>
+
+    <div class = "actionbox" >
+        <div class="method" id = "walk">
+            <label> Enter walking speed mph</label>
+            <input type="number" value="WALKING" onclick="dis('WALKING')"/>
+        </div>
+
+         <div class="method" id= "drive">
+            <label>Enter driving speed mph</label>
+            
+            <input type="number" value="DRIVING" onclick="dis('DRIVING')"/>
+        </div>
+
+        <div class="method" id = "fly">
+            
+            <select id="planes" name="planes">
+              <option value="plane">Comercial</option>
+              <option value="x-15 jet">Jet</option>
+            </select>
+            <input type="submit" value="FLY" onclick="dis('FLYING')"/>
+        </div>
+
+    </div>
+
+</section>
     
 </body>
 </html>

@@ -14,34 +14,36 @@
 
 <section class="calculate">
     <div class="infobox">
-        <img src="custom-calculator/images/rotating Earth.gif" alt="earth">
-        <div id="answer">It would take:</div>
+       
+        <img src="./images/rotating Earth.gif" width="150" height="100" alt="earth">
+        <div id="answerw">walking around:</div>
+        <div id="answerd">driving around:</div>
+        <div id="answerf">Flying around:</div>
     </div>
 
     <div class = "actionbox" >
         <div class="method" id = "walk">
             <label> Enter walking speed mph</label>
-            <input type="number" value="WALKING" onclick="dis('WALKING')"/>
+            <input type="number" id="walk" value="3" input="calculateWalk()"/>
         </div>
 
          <div class="method" id= "drive">
             <label>Enter driving speed mph</label>
             
-            <input type="number" value="DRIVING" onclick="dis('DRIVING')"/>
+            <input type="number" id="drive" value="65" input="calculateDrive()"/>
         </div>
-
-        <div class="method" id = "fly">
-            
-            <select id="planes" name="planes">
-              <option value="plane">Comercial</option>
-              <option value="x-15 jet">Jet</option>
+          
+            <label>Choose plane type</label>
+            <select id="planes">
+              <option onclick="btn001()"  value="comercial 2 days">Comercial 2 days</option>
+              <option onclick="btn002()" value="Jet 6 hours">Jet: x-15 6hours</option>
             </select>
-            <input type="submit" value="FLY" onclick="dis('FLYING')"/>
-        </div>
+        
+        
 
     </div>
 
 </section>
-    
+<script src="script.js"></script>
 </body>
 </html>
